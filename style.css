@@ -1,0 +1,184 @@
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+ 
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+   
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: rgb(244, 244, 244);
+    border-inline-start-style: outset;
+    opacity: 0.5;
+
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+  }
+  .lead {
+ 
+   
+   
+   font-family: 'Jazz LET', fantasy ;
+
+  }
+  .lead1 {
+ 
+ 
+    
+   
+    font-family: 'Jazz LET', fantasy ;
+
+   
+ 
+   }
+  .cd-menu-trigger {
+    display: inline-block;
+    position: absolute;
+    left : 0;
+    top: 50;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 .8em;
+   
+    font-weight: bold;
+  }
+ 
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 70%;
+    height: 30px;
+  }
+   
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+  }
+   
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 20px;
+    flex: auto;
+    opacity: 0.5;
+  }
+   
+  /* Add a card effect for articles */
+  .card {
+    
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 20px;
+  }
+   
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  
+
+  label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	background: #6dd6d1;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 10px 25px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa;
+	font-family: 'Damion', cursive;
+	color: white;
+	font-size: 20px;
+	transition: 500ms;
+}
+
+button:hover {
+		border: 2px solid #6dd6d1;
+	animation: hueRotation 2s linear infinite;
+}
+
+@keyframes hueRotation {
+	to {filter: hue-rotate(360deg);}
+}
+
+button:focus {
+	outline: none;
+}
+
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0) }
+  }
+
+  
+
+  #global {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px; /* largeur obligatoire pour être centré */
+  }
+
+  .size {
+    font-size: smaller;
+  }
