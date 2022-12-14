@@ -2,7 +2,7 @@
 
 <?php
 
-// Replace this with your own email address
+
 $to = 'louiejiemahusay@gmail.com';
 
 function url(){
